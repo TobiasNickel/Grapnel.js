@@ -1,3 +1,15 @@
+## Grapnel.js changed by Tobias Nickel
+In this repository where made some small changes. 
+	the .navigate - method now takes options as second parameter,
+			replace: to replace the current url and not have a new entry to history.
+			silent: to change the url, without triggering the routes.
+	added a useLink method, that will catch click events on the document, 
+			to check if a link (an a-tag) keeps on the domane 
+			and instat of loading the link, it calles navigate.
+
+the original library you can find here:
+- [GrapnelJS](https://github.com/EngineeringMode/Grapnel.js)
+
 Grapnel.js
 ==========
 
@@ -31,6 +43,7 @@ bower install grapnel
 - Supports `#` or `#!` for `hashchange` routing
 - Unobtrusive, supports multiple routers on the same page
 - No dependencies
+
 
 ## Basic Router
 
